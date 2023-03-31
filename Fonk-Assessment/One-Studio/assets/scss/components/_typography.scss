@@ -1,0 +1,120 @@
+h1,h2,h3,h4,h5,h6{
+    font-family: $basefont;
+}
+
+h1{
+    font-size: 72px;
+    line-height: 74px;
+    font-weight: 500;
+
+    @include mobile-sm {    
+        font-size: 28px;
+        line-height: 34px;
+     }
+}
+
+h2{
+    font-size: 42px;
+    line-height: 44px;
+    font-weight: 500;
+
+    @include desktop-lg {    
+        font-size: 38px;
+    }
+
+    @include tablet-landscape {    
+        font-size: 30px;
+    }
+
+    @include mobile-sm {    
+        font-size: 24px;
+        line-height: 30px;
+    }
+}
+
+h3{
+    font-size: 42px;
+    line-height: 44px;
+    font-weight: 400;
+
+    @include tablet-landscape{
+        font-size: 32px;
+        line-height: 34px;
+    }
+
+    @include mobile-sm {    
+        font-size: 18px;
+        line-height: 24px;
+     }
+}
+
+h4{
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 700;  
+    
+    @include tablet-landscape{
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    @include mobile-sm {    
+        font-size: 16px;
+        line-height: 20px;
+     }
+}
+
+h5{
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 700;
+
+    @include mobile-sm {    
+        font-size: 15px;
+        line-height: 20px;
+     }
+}
+
+h6{
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 700;
+
+    @include mobile-sm {    
+        font-size: 13px;
+        line-height: 15px;
+     }
+}
+
+p, address{
+    font-size: 24px;
+    line-height: 42px;
+    font-weight: 400;
+
+    a{
+        text-decoration: underline;  
+    }
+
+    @include tablet-landscape{
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    @include mobile-sm {    
+        font-size: 16px;
+        line-height: 24px;
+     }
+}
+
+blockquote{
+    font-size: 17px;
+    line-height: 27px;
+    font-weight: 400;
+    font-style: italic;
+    border: none;
+
+    @include mobile-sm {    
+        font-size: 15px;
+        line-height: 24px;
+     }
+}

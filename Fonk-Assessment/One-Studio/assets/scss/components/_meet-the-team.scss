@@ -1,0 +1,64 @@
+#meet_the_team{
+
+    h2{
+        padding: 0 0 60px 20px;
+    }
+
+    .team-card{
+        padding-bottom: 50px;
+
+        @include tablet-portrait{
+            height: 230px;
+            padding-bottom: 30px;
+        }
+
+        @include mobile-md{
+            width: 33.333%;
+            height: 390px;  
+        }
+
+        @include mobile-sm{
+            max-width: 49%;
+            height: 310px;            
+        }
+
+        figure{
+            width: 100%;
+            height: 239px;
+            display: block;
+            background: $grey-light;
+
+            @include tablet-landscape{
+                height: 185px
+            }
+
+            @include tablet-portrait{
+                height: 125px
+            }
+
+            @include mobile-md{
+                height: 285px;            
+            }
+
+            @include mobile-sm{
+                height: 220px;
+            }
+        } 
+
+        h6{
+            padding:30px 0 0 0;
+
+            @include tablet-portrait{
+                padding:15px 0 0 0;
+            }
+        }
+
+        p{
+            font-size: 14px;
+
+            @include tablet-portrait{
+                line-height: 18px;
+            }
+        }
+    }
+}

@@ -1,0 +1,31 @@
+/* all files */
+@import "../vendors/bootstrap-4.5.2-dist/css/bootstrap.min.css";
+@import url("../vendors/fontawesome-free-5.15.2-web/css/all.min.css");
+@import url("../vendors/fontawesome-free-5.15.2-web/css/brands.min.css");
+@import url("../vendors/fontawesome-free-5.15.2-web/css/regular.min.css");
+@import url("../vendors/fontawesome-free-5.15.2-web/css/solid.min.css");
+
+@import "settings";
+@import "base";
+@import "components/_header";
+@import "components/_footer";
+@import "components/_typography";
+@import "components/_buttons";
+
+@import "components/_hero-section";
+@import "components/_about-us";
+@import "components/_what-we-do";
+@import "components/_image-sections";
+@import "components/_our-clients";
+@import "components/_our-services.scss";
+@import "components/_testimonies.scss";
+@import "components/_who-we-are.scss";
+@import "components/_meet-the-team.scss";
+@import "components/_contact-us.scss";
+
+
+
+
+
+
+

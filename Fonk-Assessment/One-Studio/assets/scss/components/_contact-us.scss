@@ -1,0 +1,104 @@
+#contact_us{
+    padding: 120px 0 24px 0;
+    background: $light-yellow;
+
+    @include tablet-landscape{
+        padding: 60px 0 60px 0;
+    }
+
+    @include tablet-portrait {    
+        padding: 55px 0 36px 0;
+    }
+
+    @include mobile-sm {    
+        padding: 55px 0 36px 0;
+    }
+
+    .row{
+        padding: 0 0 90px 0;
+        &:nth-child(2){padding: 0;}
+
+        @include mobile-md {    
+            padding: 0 0 25px 0;
+        }
+
+        @include tablet-portrait {    
+            padding: 0 0 40px 0;
+
+            .col-sm-6 {
+                -ms-flex: 0 0 50%;
+                flex: 0 0 50%;
+                max-width: 50%;
+            }
+        }
+
+        @include mobile-sm {    
+            padding: 0 0 40px 0;
+
+            .col-sm-6 {
+                -ms-flex: 0 0 50%;
+                flex: 0 0 50%;
+                max-width: 50%;
+            }
+        }
+    }
+
+    h2{
+        @include tablet-portrait {    
+            padding: 0 0 25px 0;
+        }
+
+        @include mobile-sm {    
+            padding: 0 0 40px 0;
+        }
+    }
+
+    h3{
+        font-size: 18px;
+        font-weight: 500;
+        text-transform: uppercase;
+
+        @include mobile-sm {    
+            padding: 25px 0 20px 0;
+        }
+    }
+
+    a, tel{
+        display: block;
+        font-size: 32px;
+        line-height: 42px;
+        font-weight: 400;
+
+        @include mobile-md {    
+            font-size: 22px;
+            line-height: 32px;
+        }
+
+        @include mobile-sm {    
+            font-size: 22px;
+            line-height: 32px;
+        }
+    }
+
+    address{
+        font-size: 26px;
+        line-height: 32px;
+        font-weight: 300;
+        padding: 40px 0 0 0;
+
+        @include tablet-portrait {  
+            font-size: 18px;
+            line-height: 26px;  
+            padding: 0 0 30px 0;
+        }
+
+        @include mobile-md {    
+            padding: 25px 0 0 0;
+        }
+
+        @include mobile-sm {    
+            padding: 25px 0 0 0;
+        }
+    }
+    
+}

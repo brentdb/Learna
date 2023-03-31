@@ -1,0 +1,104 @@
+#hero{
+    width: 100%;
+    height: auto;
+    padding: 135px 0 150px 0;
+    text-align: center;
+    background: $off-white;
+
+    @include tablet-landscape {    
+        padding: 50px ;
+    }
+
+    @include tablet-portrait {    
+        text-align: left;
+        padding: 50px 30px 50px 30px;
+    }
+
+    @include mobile-sm {    
+        text-align: left;
+        padding: 50px 15px 50px 15px;
+    }
+
+    p{
+        color: $grey;
+        padding: 0 0 38px 0;
+
+        @include tablet-portrait {    
+            padding: 0 0 30px 0;
+        }
+
+        @include mobile-sm {    
+            padding: 0 0 15px 0;
+        }
+    }
+
+    h1{
+        padding: 0 0 43px 0;
+        
+        @include tablet-portrait {    
+            padding: 0 0 30px 0;
+        }
+
+        @include mobile-sm {    
+            padding: 0 0 15px 0;
+        }
+    }
+    h2{
+        font-weight: 400;
+
+        @include desktop-xl {    
+            padding: 0 60px;
+        }
+    }
+
+    button#down-arrow{
+        width: 95px;
+        height: 70px;
+        margin: 116px 0 0 0;
+        border:none;
+        background: none;
+
+        @include tablet-portrait {    
+            width: 50px;
+            height: 60px;   
+            float: right;
+            margin: 50px 105px 0 0;
+        }
+
+        @include mobile-sm { 
+            width: 50px;
+            height: 60px;   
+            float: right;
+            margin: 50px 50px 0 0;
+        }
+        
+        &:hover, &:focus, &:active{
+            border: none;
+            outline: none;
+            text-decoration: none;
+        }
+        
+    }
+} 
+
+#intro-cover-image{
+    height: 100vh; 
+    background: url(../../dist/images/studio-img-001-desktop.jpg) no-repeat center 0 ;
+    background-size: cover;
+
+    @include tablet-landscape {    
+        background: url(../../dist/images/studio-img-001-desktop.jpg) no-repeat center 0 ;
+        background-size: cover;
+    }
+
+    @include tablet-portrait {    
+        background: url(../../dist/images/studio-img-001-mobile.jpg) no-repeat right 0 ;
+        background-size: cover;
+    }
+
+    @include mobile-sm {    
+        background: url(../../dist/images/studio-img-001-mobile.jpg) no-repeat right 0 ;
+        background-size: cover;
+    }
+    
+}

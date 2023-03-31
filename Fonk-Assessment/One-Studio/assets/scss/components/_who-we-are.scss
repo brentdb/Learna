@@ -1,0 +1,18 @@
+#who_we_are{
+
+    .studio-logo{
+        
+        figure{
+            padding: 0 30px 0 0;
+            float: left;
+
+            &:first-child{
+                padding-left: 0;
+            }
+
+            @include mobile-sm{
+                max-width: 33.333%;
+            }
+        }
+    }
+}

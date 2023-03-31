@@ -1,0 +1,81 @@
+header{
+    text-align: center;
+    padding: 65px 0;
+
+    @include tablet-landscape{
+        padding: 35px;
+    }
+
+    @include tablet-portrait {    
+        padding: 35px;
+    }
+
+    @include mobile-sm {    
+        padding: 35px 20px;
+    }
+
+    .header-logo{
+        width: 100%;
+        max-width: 203px;
+        display: block;
+        float: left;
+        padding: 15px 0;
+        
+        figure{
+            img{width: 100%;}
+        }
+
+        @include mobile-sm {    
+            max-width: 177px;
+        }
+    }
+
+    nav{
+        width: auto;
+        display: inline-block;
+        position: relative;
+        top: 30px;
+
+        @include tablet-portrait {    
+            width: 100%;
+        }
+
+        @include mobile-sm {    
+            width: 100%;
+        }
+
+        ul{
+            li{
+                display: inline-block;
+                list-style: none;
+                a{
+                    font-family: $basefont;
+                    font-size: 16px;
+                    color:$neutral-black;
+                    display: block;
+                    margin:0;
+                    padding:14px 15px;
+
+                    &:hover, &:focus, &:active{
+                        color:$lilac;
+                        text-decoration: none;
+                    }
+                }
+
+                &:first-child a{padding-left:0;}
+                &:last-child a{padding-right:0;}
+            }
+        }
+    }
+
+    a.btn-primary{
+        float: right;
+        margin:30px 0 0 0;
+
+        @include tablet-portrait {    
+           position: absolute;
+           top:35px;
+           right: 35px;
+        }
+    }
+}
